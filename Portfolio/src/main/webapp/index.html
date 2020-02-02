@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    
+    <meta charset="utf-8">
+
+    <title>Shashankk's Portfolio</title>
+
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link
+	href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
+	rel="stylesheet" id="bootstrap-css">
+<script
+	src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<!-- Bootstrap core CSS -->
+<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+<meta name="google" content="notranslate">
+
+<link
+	href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
+	rel="stylesheet" id="bootstrap-css">
+<script
+	src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<style media="screen">
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+
+
+  
+  body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+
+
+
+	
+
+
+.bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.bgimg-1 {
+position: relative;
+opacity: 0.65;
+background-attachment: fixed;
+background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  
+}
+
+.bgimg-2 {
+  background-image: url("Images/Robot.jpg");
+  min-height: 700px;
+  
+ 
+}
+
+
+
+.parallax {
+  /* The image used */
+  background-image: url("Images/car.png");
+width:100%;
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.bgimg-3 {
+  background-image: url("Images/Keyboard.jpg");
+  min-height: 400px;
+}
+
+
+  .caption {
+  position: absolute;
+  left: 0;
+  top: 24%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+
+
+a{
+
+text-decoration: none;
+font-family: sans-serif;
+font-weight: 200;
+margin-top: 20px;
+color: #ffffff;
+size: 60px;
+
+}
+
+
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  
+  </style>
+  </head>
+  
+  
+  <body>
+  
+  
+  
+  
+   <div class="bgimg-1">
+   <div class="caption">
+   
+   
+   
+  <span class="border">Shashankk Shekar Chaturvedi</span>
+  
+  <br>
+  <span class="border"><a href="#aboutme">About Me</a></span>
+  <br>
+  <span class="border"><a href="#Skills">My Skills</a></span>
+ 
+  
+        <h1 style="color: #ffffff; padding-top: 60px"></h1>
+
+  </div>
+  
+  </div>
+
+  
+  
+   <script>
+
+
+   var img = document.querySelector('.bgimg-1');
+   var h1 = document.querySelector('h1');
+
+   // create image to detect when loaded
+   var tempImg = new Image(100, 200);
+   tempImg.src = "Images/Web.jpg";
+   document.body.appendChild(tempImg);
+
+   tempImg.addEventListener('load', myFunction)
+   tempImg.addEventListener('error', function() {
+     alert('error');
+   })
+
+
+   function myFunction() {
+     // set background-image property to image source
+     img.style.backgroundImage = "url(" + tempImg.src + ")";
+
+     // remove image after loaded
+     tempImg.parentNode.removeChild(tempImg);
+
+     setTimeout(function() {
+       h1.innerHTML += ("S");
+     }, 1000);
+     setTimeout(function() {
+       h1.innerHTML += ("y");
+     }, 1400);
+     setTimeout(function() {
+       h1.innerHTML += ("s");
+     }, 1800);
+     setTimeout(function() {
+       h1.innerHTML += ("t");
+     }, 2200);
+     setTimeout(function() {
+       h1.innerHTML += ("e");
+     }, 2600);
+     setTimeout(function() {
+         h1.innerHTML += ("m");
+       }, 3000);
+     setTimeout(function() {
+         h1.innerHTML += (".");
+       }, 3400);
+
+
+
+     setTimeout(function() {
+         h1.innerHTML += ("o");
+       }, 3800);
+       setTimeout(function() {
+         h1.innerHTML += ("u");
+       }, 4200);
+       setTimeout(function() {
+         h1.innerHTML += ("t");
+       }, 4600);
+       setTimeout(function() {
+         h1.innerHTML += (".");
+       }, 5000);
+       setTimeout(function() {
+         h1.innerHTML += ("p");
+       }, 5400);
+       setTimeout(function() {
+           h1.innerHTML += ("r");
+         }, 5800);
+       setTimeout(function() {
+           h1.innerHTML += ("i");
+         }, 6200);
+       setTimeout(function() {
+           h1.innerHTML += ("n");
+         }, 6600);
+       setTimeout(function() {
+           h1.innerHTML += ("t");
+         }, 7000);
+       setTimeout(function() {
+           h1.innerHTML += ("l");
+         }, 7400);
+       setTimeout(function() {
+           h1.innerHTML += ("n");
+         }, 7800);
+       setTimeout(function() {
+           h1.innerHTML += ("\(");
+         }, 8200);
+         setTimeout(function() {
+             h1.innerHTML += ("\"");
+           }, 8300);
+       setTimeout(function() {
+           h1.innerHTML += ("H");
+         }, 8600);
+       setTimeout(function() {
+           h1.innerHTML += ("e");
+         }, 9000);
+       setTimeout(function() {
+           h1.innerHTML += ("l");
+         }, 9400);
+       setTimeout(function() {
+           h1.innerHTML += ("l");
+         }, 9800);
+       setTimeout(function() {
+           h1.innerHTML += ("o");
+         }, 10200);
+       setTimeout(function() {
+           h1.innerHTML += (" ");
+         }, 10600);
+       setTimeout(function() {
+           h1.innerHTML += ("W");
+         }, 11000);
+       setTimeout(function() {
+           h1.innerHTML += ("o");
+         }, 11400);
+       setTimeout(function() {
+           h1.innerHTML += ("r");
+         }, 11800);
+       setTimeout(function() {
+           h1.innerHTML += ("l");
+         }, 12200);
+       setTimeout(function() {
+           h1.innerHTML += ("d");
+         }, 12600);
+       setTimeout(function() {
+           h1.innerHTML += ("\"");
+         }, 13000);
+       setTimeout(function() {
+           h1.innerHTML += ("\)");
+         }, 13200);
+       setTimeout(function() {
+           h1.innerHTML += (";");
+         }, 13600);
+       
+     
+   }
+
+
+
+   
+
+        </script>
+ 
+    
+   
+
+
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;" id="aboutme">
+  <h3 style="text-align:center;">ABOUT ME</h3>
+  <p>I'm so glad that you're here. This is Shashankk from Mumbai, India. I'm someone who loves learning a lot. Learning not only related to Software Development but other topics as well like AI research, Aerospace, Planets, Robotics, IOT to name a few. In my free time, I spend time in either reading books, acquiring any new skill or watching a movie. My favorite recently adapted skill is solving the Rubik's Cube 3x3 and 4x4. Just love solving the Cube. When I work on a new project, the rule which I apply in my work is to adapt the Client's perspective from the beginning till the end. This approach helps me in customizing the project a lot better because it feels like its my own project. Thank you if you read till here. This page is still under construction. You can feel free to have a glance on my skills section though. Thank you.</p>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:45px;color: #000000;">AI is the new trend</span>
+  </div>
+</div>
+
+
+<div class="parallax"></div>
+
+
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <p>Site still under construction. Best viewed on bigger screens</p>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
+  </div>
+</div>
+
+<div style="position:relative;" id="Skills">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center; color: #ffffff">SKILLS</h3>
+  <br>
+  <br>
+  
+  
+  
+  <div class="w3-container" style="padding:128px 16px" id="team">
+  <div class="w3-row-padding w3-grayscale" style="margin-top:5px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+       
+        <div class="w3-container">
+          <h2>FRONTEND</h2>
+  <ul>
+  
+  <li>HTML5</li>
+  <li>CSS</li>
+  <li>JAVASCRIPT</li>
+  <li>JQUERY</li>
+  <li>ANGULARJS</li>
+  <li>BOOTSTRAP</li>
+  <li>XML</li>
+  
+  </ul>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        
+        <div class="w3-container">
+           <h2>BACKEND</h2>
+  <ul>
+  <li>CORE JAVA</li>
+  <li>ADVANCED JAVA</li>
+  <li>MACHINE LEARNING</li>
+  <li>MAVEN</li>
+  <li>SPRING</li>
+  <li>HIBERNATE</li>
+  </ul>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        
+        <div class="w3-container">
+          <h2>DATABASE</h2>
+  <ul>
+  <li>ORACLE SQL</li>
+  <li>ORACLE PL/SQL</li>
+  <li>MYSQL</li>
+  <li>ORACLE_DATABASE ADMINISTRATION 11G</li>
+  <li>GOOGLE APP ENGINE (GCLOUD)</li>  
+  </ul>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        
+        <div class="w3-container">
+           <h2>APP DEVELOPMENT</h2>
+  
+  <ul>
+  
+  <li>ANDROID</li>
+    <li>CORDOVA</li>
+  </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border">THIS SITE IS STILL UNDER CONSTRUCTION.</span>
+  </div>
+</div>
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  
+</div>
+
+
+  </body>
+</html>
